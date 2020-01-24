@@ -10,22 +10,22 @@
             font-family: ‘Open Sans’, Arial, sans-serif !important
         }
 
-         .image-round {
+        .image-round {
             border-radius: 50%;
-			margin-top:15px;
-        }		
+            margin-top: 15px;
+        }
 
-       alignment{
-           align-content: center;
-           padding-left: 10px;
-       }
-		
-		.img {
-				float:  center;
-				width:  100px;
-				height: 100px;
-				background-size: cover;
-			}
+        alignment {
+            align-content: center;
+            padding-left: 10px;
+        }
+
+        .img {
+            float: center;
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+        }
     </style>
 </head>
 <body style="margin: 0; padding: 0;">
@@ -59,7 +59,7 @@
                                                                         <td style="color: #1f2b7f; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 38px; line-height: 18px; border-bottom: #d2d2d2 1px solid; padding-bottom: 25px; font-weight: 600;">5x5 Daily Safety Assessment</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td style="color: #000000; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 20px; padding-top: 18px; font-weight: 600;"><span style="color: #807e7e;">Project:</span> PAKN'SAVE ROTORUA Exterior Repaint</td>
+                                                                        <td style="color: #000000; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 20px; padding-top: 18px; font-weight: 600;"><span style="color: #807e7e;">Project:</span> {JobName}</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -71,24 +71,26 @@
 
                                         </td>
                                     </tr>
+
                                     <tr>
                                         <td bgcolor="#ffffff" style="padding-top:10px;  border-bottom: #d2d2d2 1px solid;">&nbsp;</td>
-
+                                    </tr>
 
                                     <tr>
+                                    </tr>
                                     <tr>
                                         <td bgcolor="#ffffff" style="padding-top:10px;  border-bottom: #d2d2d2 1px solid;">
                                             <table width="705" border="0" cellspacing="0" cellpadding="0" style="padding:15px 0; color: #000000; font-family: Arial, sans-serif, ‘Open Sans’; font-size:16px;">
                                                 <tbody>
                                                     <tr>
-                                                        <td width="385">Completed by: Richard Waite</td>
-                                                        <td width="320" style=" border-left: 1px #d2d2d2 solid; padding:10px 0 10px 20px;">Date Completed: <span style="font-weight: 600;">23 Jan 2020 7:11 PM</span></td>
+                                                        <td width="385">Completed by: {LoggedUser}</td>
+                                                        <td width="320" style=" border-left: 1px #d2d2d2 solid; padding:10px 0 10px 20px;">Date Completed: <span style="font-weight: 600;">{AssessmentDate}</span></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
-
                                         </td>
                                     </tr>
+
                                     <tr>
                                         <td>
                                             <table width="705" border="0" cellspacing="0" cellpadding="0" style="padding-top:15px;">
@@ -102,7 +104,6 @@
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
-
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -110,23 +111,20 @@
                                                             <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-top: 10px;">
                                                                 <tbody>
                                                                     <tr>
-                                                                         {OnsiteTeamImagePath}
-																	</tr>
+                                                                        {JobFormImagePath}
+                                                                    </tr>
                                                                 </tbody>
                                                             </table>
-
                                                         </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
-
                                         </td>
-
-
                                     </tr>
+
                                     <tr>
                                         <td>
-                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display: inline-table">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display: {Visible}">
                                                 <tbody>
                                                     <tr>
                                                         <td>
@@ -138,7 +136,6 @@
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
-
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -146,8 +143,8 @@
                                                             <table style="border:0;width: 100%;" cellpadding="0" cellspacing="0">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td bgcolor="#1f2b7f" style="width:40%;background-color:#1f2b7f;float:left;height:30px;"></td>
-                                                                        <td bgcolor="#cccccc" style="width:60%;background-color:#cccccc;float:left;height:30px;"></td>
+                                                                        <td bgcolor="#1f2b7f" style="width:{ProjectComplete}%;background-color:#1f2b7f;float:left;height:30px;"></td>
+                                                                        <td bgcolor="#cccccc" style="width:{ProjectCompleteReverse}%;background-color:#cccccc;float:left;height:30px;"></td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -155,17 +152,47 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                        </td>
+                                    </tr>
 
+                                    <tr>
+                                        <td bgcolor="#ffffff" style="padding-top:10px;  border-bottom: #d2d2d2 1px solid;">&nbsp;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table width="705" border="0" cellspacing="0" cellpadding="0" style="padding-top:15px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 20px 0;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="color: #1f2b7f; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 30px; line-height: 18px; text-align: left; font-weight: 600;">Team onsite this week</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-top: 10px;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        {OnsiteTeamImagePath}
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </td>
                                     </tr>
 
                                     <!-- <td style="color: #1f2b7f; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 30px; line-height: 18px; text-align: left; font-weight: 600;">Your Daily Checklist</td> -->
                                     <tr>
                                         <td>
-
-                                            </br>
-                                            <!-- <tr> -->
-                                            <!-- </tr> -->
                                             <table width="705" border="0" cellspacing="0" cellpadding="0" style="padding-top:15px;">
                                                 <tbody>
                                                     <tr>
@@ -177,12 +204,10 @@
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
-
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td style=" padding: 15px 0 15px 30px; color: #000000; font-family: Arial, sans-serif, ‘Open Sans’; font-size:18px; font-weight: bold; background-color:
-#d9ecfa;">
+                                                        <td style=" padding: 15px 0 15px 30px; color: #000000; font-family: Arial, sans-serif, ‘Open Sans’; font-size:18px; font-weight: bold; background-color:#d9ecfa;">
                                                             Health & Safety
                                                         </td>
                                                     </tr>
@@ -212,8 +237,8 @@
                                                                                     <tr>
                                                                                         <td width="30">&nbsp;</td>
                                                                                         <td width="270">Falling Materials</td>
-                                                                                        <td width="125">N/A</td>
-                                                                                        <td width="240"></td>
+                                                                                        <td width="125">{Response11}</td>
+                                                                                        <td width="240">{Comment11}</td>
                                                                                         <td width="30">&nbsp;</td>
                                                                                     </tr>
                                                                                 </tbody>
@@ -227,8 +252,8 @@
                                                                                     <tr>
                                                                                         <td width="30">&nbsp;</td>
                                                                                         <td width="270">Scaffolds</td>
-                                                                                        <td width="125">N/A</td>
-                                                                                        <td width="240"></td>
+                                                                                        <td width="125">{Response12}</td>
+                                                                                        <td width="240">{Comment12}</td>
                                                                                         <td width="30">&nbsp;</td>
                                                                                     </tr>
                                                                                 </tbody>
@@ -242,8 +267,8 @@
                                                                                     <tr>
                                                                                         <td width="30">&nbsp;</td>
                                                                                         <td width="270">Roof-Harness plan in place</td>
-                                                                                        <td width="125">N/A</td>
-                                                                                        <td width="240"></td>
+                                                                                        <td width="125">{Response13}</td>
+                                                                                        <td width="240">{Comment13}</td>
                                                                                         <td width="30">&nbsp;</td>
                                                                                     </tr>
                                                                                 </tbody>
@@ -257,8 +282,8 @@
                                                                                     <tr>
                                                                                         <td width="30">&nbsp;</td>
                                                                                         <td width="270">Elevated Work Platforms</td>
-                                                                                        <td width="125">N/A</td>
-                                                                                        <td width="240"></td>
+                                                                                        <td width="125">{Response14}</td>
+                                                                                        <td width="240">{Comment14}</td>
                                                                                         <td width="30">&nbsp;</td>
                                                                                     </tr>
                                                                                 </tbody>
@@ -272,8 +297,8 @@
                                                                                     <tr>
                                                                                         <td width="30">&nbsp;</td>
                                                                                         <td width="270">Power Lines</td>
-                                                                                        <td width="125">N/A</td>
-                                                                                        <td width="240"></td>
+                                                                                        <td width="125">{Response15}</td>
+                                                                                        <td width="240">{Comment15}</td>
                                                                                         <td width="30">&nbsp;</td>
                                                                                     </tr>
                                                                                 </tbody>
@@ -283,23 +308,19 @@
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
-
                                                         </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
-
                                         </td>
-
-
                                     </tr>
+
                                     <tr>
                                         <td>
                                             <table width="705" border="0" cellspacing="0" cellpadding="0" style="padding-top:25px;">
                                                 <tbody>
                                                     <tr>
-                                                        <td style=" padding: 15px 0 15px 30px; color: #000000; font-family: Arial, sans-serif, ‘Open Sans’; font-size:18px; font-weight: bold; background-color:
-#d9ecfa;">
+                                                        <td style=" padding: 15px 0 15px 30px; color: #000000; font-family: Arial, sans-serif, ‘Open Sans’; font-size:18px; font-weight: bold; background-color:#d9ecfa;">
                                                             General Items
                                                         </td>
                                                     </tr>
@@ -329,8 +350,8 @@
                                                                                     <tr>
                                                                                         <td width="30">&nbsp;</td>
                                                                                         <td width="270">Public access/protection</td>
-                                                                                        <td width="125">N/A</td>
-                                                                                        <td width="240"></td>
+                                                                                        <td width="125">{Response21}</td>
+                                                                                        <td width="240">{Comment21}</td>
                                                                                         <td width="30">&nbsp;</td>
                                                                                     </tr>
                                                                                 </tbody>
@@ -344,8 +365,8 @@
                                                                                     <tr>
                                                                                         <td width="30">&nbsp;</td>
                                                                                         <td width="270">Signage/barriers</td>
-                                                                                        <td width="125">N/A</td>
-                                                                                        <td width="240"></td>
+                                                                                        <td width="125">{Response22}</td>
+                                                                                        <td width="240">{Comment22}</td>
                                                                                         <td width="30">&nbsp;</td>
                                                                                     </tr>
                                                                                 </tbody>
@@ -359,8 +380,8 @@
                                                                                     <tr>
                                                                                         <td width="30">&nbsp;</td>
                                                                                         <td width="270">Housekeeping - Tidy site</td>
-                                                                                        <td width="125">N/A</td>
-                                                                                        <td width="240"></td>
+                                                                                        <td width="125">{Response23}</td>
+                                                                                        <td width="240">{Comment23}</td>
                                                                                         <td width="30">&nbsp;</td>
                                                                                     </tr>
                                                                                 </tbody>
@@ -374,8 +395,8 @@
                                                                                     <tr>
                                                                                         <td width="30">&nbsp;</td>
                                                                                         <td width="270">Ice</td>
-                                                                                        <td width="125">N/A</td>
-                                                                                        <td width="240"></td>
+                                                                                        <td width="125">{Response24}</td>
+                                                                                        <td width="240">{Comment24}</td>
                                                                                         <td width="30">&nbsp;</td>
                                                                                     </tr>
                                                                                 </tbody>
@@ -389,8 +410,8 @@
                                                                                     <tr>
                                                                                         <td width="30">&nbsp;</td>
                                                                                         <td width="270">Traffic</td>
-                                                                                        <td width="125">N/A</td>
-                                                                                        <td width="240"></td>
+                                                                                        <td width="125">{Response25}</td>
+                                                                                        <td width="240">{Comment25}</td>
                                                                                         <td width="30">&nbsp;</td>
                                                                                     </tr>
                                                                                 </tbody>
@@ -405,10 +426,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-
                                         </td>
-
-
                                     </tr>
 
                                     <tr>
@@ -416,8 +434,7 @@
                                             <table width="705" border="0" cellspacing="0" cellpadding="0" style="padding-top:25px;">
                                                 <tbody>
                                                     <tr>
-                                                        <td style=" padding: 15px 0 15px 30px; color: #000000; font-family: Arial, sans-serif, ‘Open Sans’; font-size:18px; font-weight: bold; background-color:
-#d9ecfa;">
+                                                        <td style=" padding: 15px 0 15px 30px; color: #000000; font-family: Arial, sans-serif, ‘Open Sans’; font-size:18px; font-weight: bold; background-color: #d9ecfa;">
                                                             Comments
                                                         </td>
                                                     </tr>
@@ -425,7 +442,7 @@
                                                         <td style="padding-top:5px">&nbsp;</td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="border:1px solid #d2d2d2; height: 80px;">&nbsp;</td>
+                                                        <td style="border:1px solid #d2d2d2; height: 80px;">&nbsp;{Comment}</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -434,8 +451,6 @@
 
                                 </tbody>
                             </table>
-
-
                         </td>
                     </tr>
                     <tr>
@@ -466,7 +481,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-
                         </td>
                     </tr>
                 </table>
