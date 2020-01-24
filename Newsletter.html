@@ -17,7 +17,7 @@ font-family: ‘Open Sans’, Arial, sans-serif !important
     <td><table align="center" border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
         <tr>
          <td align="center">
- {Header}
+  {Header}
 </td>
         </tr>
         
@@ -31,7 +31,7 @@ font-family: ‘Open Sans’, Arial, sans-serif !important
   <tbody>
     <tr>
         <td width="130">
- {Task}</td>
+  {Task}</td>
       <td width="575">
       	
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -70,10 +70,98 @@ font-family: ‘Open Sans’, Arial, sans-serif !important
 
 		</td>
 	  </tr>
-     <tr>
+    <tr>
 		<td>
 			<table width="705" border="0" cellspacing="0" cellpadding="0" style="padding-top:15px;">
   <tbody>
+    <tr>
+      <td>
+      	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 20px 0;">
+  <tbody>
+    <tr>
+      <td style="color: #1f2b7f; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 30px; line-height: 18px; text-align: left; font-weight: 600;">Your Daily Photos</td>
+    </tr>
+  </tbody>
+</table>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-top: 10px;">
+  <tbody>
+    <tr>
+		{JobFormImagePath}
+    </tr>
+  </tbody>
+</table>
+    
+</td>
+    </tr>
+  </tbody>
+</table>
+
+		</td>
+      
+     
+  </tr>
+    <tr>
+    	<td>
+    		<table width="100%" border="0" cellspacing="0" cellpadding="0" style="display: {Visible}">
+  <tbody>
+    <tr>
+      <td>
+      	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 20px; border-top: #d2d2d2 1px solid; padding: 20px 0;">
+  <tbody>
+    <tr>
+      <td style="color: #1f2b7f; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 30px; line-height: 18px; text-align: left; font-weight: 600;">Your Project Status</td>
+      <td style="color: #111; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 16px; line-height: 18px; text-align: right;">Completion</td>
+    </tr>
+  </tbody>
+</table>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+	 <table style="border:0;width: 100%;" cellpadding="0" cellspacing="0">
+	    <tbody>
+		<tr>
+	  	<td bgcolor="#1f2b7f" style="width:{ProjectComplete}%;background-color:#1f2b7f;float:left;height:30px;"></td>
+	  	<td bgcolor="#cccccc" style="width:{ProjectCompleteReverse}%;background-color:#cccccc;float:left;height:30px;"></td>
+  		</tr>
+	    </tbody>
+	 </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+    	</td>
+    </tr>
+	
+ <!-- <td style="color: #1f2b7f; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 30px; line-height: 18px; text-align: left; font-weight: 600;">Your Daily Checklist</td> -->
+     <tr>
+		<td>
+		
+			</br>
+			 <!-- <tr> -->
+  
+   <!-- </tr> -->
+			<table width="705" border="0" cellspacing="0" cellpadding="0" style="padding-top:15px;">
+  <tbody>
+   <tr>
+      <td>
+      	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 20px; border-top: #d2d2d2 1px solid; padding: 20px 0;">
+  <tbody>
+    <tr>
+      <td style="color: #1f2b7f; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 30px; line-height: 18px; text-align: left; font-weight: 600;">Your Daily Checklist</td>
+    </tr>
+  </tbody>
+</table>
+
+      </td>
+    </tr>
     <tr>
       <td  style=" padding: 15px 0 15px 30px; color: #000000; font-family: Arial, sans-serif, ‘Open Sans’; font-size:18px; font-weight: bold; background-color:
 #d9ecfa;" >Health & Safety</td>
@@ -299,41 +387,9 @@ font-family: ‘Open Sans’, Arial, sans-serif !important
     </tr>
   </tbody>
 </table>
-
-		</td>
-      
-     
-  </tr>
-      <tr>
-      <td style="border-bottom:1px solid #d2d2d2;" >
-      <table width="705" border="0" cellspacing="0" cellpadding="0" style="padding-top: 20px;">
-  <tbody>
-    <tr>
-        <td width="130">
- {Photo}</td>
-      <td width="575">
-      	
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <td style="color: #1f2b7f; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 38px; line-height: 18px; border-bottom: #d2d2d2 1px solid; padding-bottom: 25px; font-weight: 600;">Daily Project Photos</td>
-    </tr>
-    <tr>
-      <td style="color: #000000; font-family: Arial, sans-serif, ‘Open Sans’; font-size: 20px; padding-top: 18px; font-weight: 600;"><span style="color: #807e7e;">Project:</span> {JobName}</td>
-    </tr>
-  </tbody>
-</table>
-
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-</td>
-    </tr>
+		</td>     
+  </tr>  
    
-	  {JobFormImagePath}
-      
   </tbody>
 </table>
 
